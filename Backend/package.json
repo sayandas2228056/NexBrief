@@ -1,18 +1,22 @@
 {
-  "name": "backend",
+  "name": "inteliview-backend",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Backend server for InteliView application deployed on Render",
+  "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js",
-    "build": "vercel build",
-    "deploy": "vercel deploy",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon server.js",
+    "start": "node server.js",
+    "build": "echo 'No build step required'"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "express",
+    "node",
+    "resume",
+    "ats",
+    "interview"
+  ],
+  "author": "Sayan Das",
   "license": "ISC",
-  "type": "commonjs",
   "dependencies": {
     "@extractus/article-extractor": "^8.0.19",
     "axios": "^1.10.0",
@@ -23,7 +27,12 @@
     "express": "^5.1.0",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.16.0",
-    "nodemailer": "^7.0.3",
+    "nodemailer": "^7.0.3"
+  },
+  "devDependencies": {
     "nodemon": "^3.1.10"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }
